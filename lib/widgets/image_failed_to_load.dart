@@ -15,7 +15,7 @@ class ImageFailedToLoad extends BaseStatelessWidget {
       alignment: Alignment.center,
       height: 150.h,
       decoration: BoxDecoration(
-        color: backgroundColor ?? AppColors.backgroundColor,
+        color: backgroundColor ?? AppColors.darkWhiteColor,
         borderRadius: BorderRadius.circular(Get.width * 0.03),
       ),
       child: FaIcon(

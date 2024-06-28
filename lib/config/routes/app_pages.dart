@@ -1,18 +1,31 @@
 
-import 'package:bitakasla/view/home/home_screen.dart';
-import 'package:bitakasla/view/home/home_screen_binding.dart';
+import 'package:bitakasla/view/app_selection/app_selection_screen.dart';
+import 'package:bitakasla/view/app_selection/app_selection_screen_binding.dart';
+import 'package:bitakasla/view/auth/sign_in/sign_in_screen.dart';
+import 'package:bitakasla/view/auth/sign_in/sign_in_screen_binding.dart';
+import 'package:bitakasla/view/auth/sign_up/sign_up_screen.dart';
+import 'package:bitakasla/view/auth/sign_up/sign_up_screen_binding.dart';
 import 'package:get/get.dart';
 
 part 'app_routes.dart';
 
 class AppPages {
-  static String initial = AppRoutes.mainScreen;
+  static String initial = AppRoutes.appSelectionScreen;
   static final routes = [
     GetPage(
-      name: AppRoutes.mainScreen,
-      page: () => const HomeScreen(),
-      binding: HomeScreenBinding(),
+      name: AppRoutes.appSelectionScreen,
+      page: () => const AppSelectionScreen(),
+      binding: AppSelectionScreenBinding(),
     ),
-   
+   GetPage(
+      name: AppRoutes.signInScreen,
+      page: () => const SignInScreen(),
+      binding: SignInScreenBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.signUpScreen,
+      page: () => const SignUpScreen(),
+      binding: SignUpScreenBinding(),
+    ),
   ];
 }

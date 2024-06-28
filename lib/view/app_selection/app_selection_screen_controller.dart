@@ -1,5 +1,5 @@
 import 'package:bitakasla/core/base/base_getx_controller.dart';
 
-class HomeScreenController extends BaseGetxController {
+class AppSelectionScreenController extends BaseGetxController {
   
 }
