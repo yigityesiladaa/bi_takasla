@@ -1,5 +1,6 @@
 import 'package:bitakasla/core/localization/localization_service.dart';
 import 'package:bitakasla/core/services/cache_service.dart';
+import 'package:bitakasla/view/nav_bar/nav_bar_screen_controller.dart';
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
 import 'package:logger/web.dart';
@@ -13,6 +14,7 @@ class GetxManager {
   }
 
   static Future<void> setupControllers() async {
+    Get.put(NavBarController(), permanent: true);
   }
 
 }

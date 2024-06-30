@@ -36,7 +36,7 @@ class AppColors {
   static const Color punch = Color(0xFFEA3943);
   static const primaryBlue = Color(0xFF1E315F);
 
-  static const Color backgroundColor = Color.fromARGB(255, 230, 230, 232);
+  static const Color backgroundColor = Color(0xFFececec);
   static const Color cardColor = Color(0xFFFFFFFF);
   static const Color cardBlueColor = Color(0xFF1E315F);
   static const Color borderGray = Color(0xFFE7E7E7);

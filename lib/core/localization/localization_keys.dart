@@ -15,4 +15,14 @@ class LocalizationKeys {
   static const String nameSurnameTextKey = 'nameSurnameTextKey';
   static const String searchTextKey = 'searchTextKey';
   static const String bitakaslaTitleTextKey = 'bitakaslaTitleTextKey';
+  static const String homeTitleTextKey = 'homeTitleTextKey';
+  static const String exploreTitleTextKey = 'exploreTitleTextKey';
+  static const String trendsTitleTextKey = 'trendsTitleTextKey';
+  static const String profileTitleTextKey = 'profileTitleTextKey';
+  static const String settingsTitleTextKey = 'settingsTitleTextKey';
+  static const String termsOfUseTitleTextKey = 'termsOfUseTitleTextKey';
+  static const String kvkkTitleTextKey = 'kvkkTitleTextKey';
+  static const String signOutTextKey = 'signOutTextKey';
+  static const String walletTextKey = 'walletTextKey';
+  static const String notificationsTitleTextKey = 'notificationsTitleTextKey';
 }

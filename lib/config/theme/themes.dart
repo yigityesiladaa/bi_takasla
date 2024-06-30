@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 final ThemeData lightTheme = ThemeData.light().copyWith(
   scaffoldBackgroundColor: AppColors.backgroundColor,
+  primaryColor: AppColors.primaryColor,
   appBarTheme: const AppBarTheme(
     iconTheme: IconThemeData(
       color: AppColors.white,
@@ -85,7 +86,7 @@ final ThemeData lightTheme = ThemeData.light().copyWith(
 
 final ThemeData darkTheme = ThemeData.dark().copyWith(
   primaryColor: AppColors.primaryColor,
-  scaffoldBackgroundColor: AppColors.backgroundColor,
+  scaffoldBackgroundColor: AppColors.grey1000Color,
   brightness: Brightness.dark,
   cardColor: AppColors.cardColor,
   indicatorColor: AppColors.primaryColor,

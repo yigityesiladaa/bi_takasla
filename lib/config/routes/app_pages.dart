@@ -5,7 +5,8 @@ import 'package:bitakasla/view/auth/sign_in/sign_in_screen_binding.dart';
 import 'package:bitakasla/view/auth/sign_up/sign_up_screen.dart';
 import 'package:bitakasla/view/auth/sign_up/sign_up_screen_binding.dart';
 import 'package:bitakasla/view/nav_bar/nav_bar_screen.dart';
-import 'package:bitakasla/view/nav_bar/nav_bar_screen_binding.dart';
+import 'package:bitakasla/view/notifications/notifications_screen.dart';
+import 'package:bitakasla/view/notifications/notifications_screen_binding.dart';
 import 'package:get/get.dart';
 
 part 'app_routes.dart';
@@ -31,7 +32,11 @@ class AppPages {
     GetPage(
       name: AppRoutes.navBarScreen,
       page: () => const NavBarScreen(),
-      binding: NavBarScreenBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.notificationsScreen,
+      page: () => const NotificationsScreen(),
+      binding: NotificationsScreenBinding(),
     ),
   ];
 }

@@ -10,7 +10,7 @@ import 'package:bitakasla/view/nav_bar/trends/trends_screen.dart';
 import 'package:bitakasla/view/nav_bar/trends/trends_screen_binding.dart';
 import 'package:flutter/material.dart';
 
-class NavBarScreenController extends BaseGetxController {
+class NavBarController extends BaseGetxController {
   var isLoading = false.obs;
 
   late final DateTime popupOpenTime;
@@ -31,6 +31,7 @@ class NavBarScreenController extends BaseGetxController {
     if (index != currentIndex && _routes[index].isNotEmpty) {
       _currentIndex.value = index;
       Get.offAndToNamed(_routes[index], id: 1);
+      update();
     }
   }
 

@@ -17,5 +17,13 @@ final Map<String, String> trTR = {
   LocalizationKeys.alreadyHaveAccountTextKey: 'Zaten bir hesabınız var mı?',
   LocalizationKeys.searchTextKey: 'Ara',
   LocalizationKeys.bitakaslaTitleTextKey: 'Bi\'Takasla',
+  LocalizationKeys.homeTitleTextKey: 'Anasayfa',
+  LocalizationKeys.exploreTitleTextKey: 'Keşfet',
+  LocalizationKeys.trendsTitleTextKey: 'Trendler',
+  LocalizationKeys.profileTitleTextKey: 'Profil',
+  LocalizationKeys.termsOfUseTitleTextKey: 'Kullanım Koşulları',
+  LocalizationKeys.kvkkTitleTextKey: 'KVKK ve Gizlilik',
+  LocalizationKeys.signOutTextKey: 'Çıkış Yap',
+  LocalizationKeys.walletTextKey: 'Cüzdan',
+  LocalizationKeys.notificationsTitleTextKey: 'Bildirimler',
 };
-

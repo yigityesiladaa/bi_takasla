@@ -5,10 +5,11 @@ import 'package:bitakasla/core/constants/app_constants.dart';
 import 'package:bitakasla/core/localization/localization_keys.dart';
 import 'package:bitakasla/core/utils/size_config.dart';
 import 'package:bitakasla/view/nav_bar/nav_bar_screen_controller.dart';
+import 'package:bitakasla/widgets/custom_drawer/custom_drawer.dart';
 import 'package:bitakasla/widgets/primary_app_bar.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class NavBarScreen extends BaseGetView<NavBarScreenController> {
+class NavBarScreen extends BaseGetView<NavBarController> {
   const NavBarScreen({super.key});
 
   @override
@@ -19,6 +20,7 @@ class NavBarScreen extends BaseGetView<NavBarScreenController> {
       onPopInvoked: (_) => controller.changeScreen(0),
       child: Scaffold(
         resizeToAvoidBottomInset: false,
+        drawer: CustomDrawer(),
         appBar: _buildAppBar(),
         body: Navigator(
           key: Get.nestedKey(1),
@@ -40,7 +42,7 @@ class NavBarScreen extends BaseGetView<NavBarScreenController> {
         title: LocalizationKeys.bitakaslaTitleTextKey.tr,
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () => Get.toNamed(AppRoutes.notificationsScreen),
             icon:
                 const Icon(Icons.notifications, color: AppColors.white),
           ),
