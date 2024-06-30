@@ -15,5 +15,7 @@ final Map<String, String> trTR = {
   LocalizationKeys.confirmPasswordTextKey: 'Şifre Tekrar',
   LocalizationKeys.nameSurnameTextKey: 'Ad Soyad',
   LocalizationKeys.alreadyHaveAccountTextKey: 'Zaten bir hesabınız var mı?',
+  LocalizationKeys.searchTextKey: 'Ara',
+  LocalizationKeys.bitakaslaTitleTextKey: 'Bi\'Takasla',
 };
 

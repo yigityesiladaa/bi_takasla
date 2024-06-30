@@ -45,7 +45,7 @@ class SignUpScreen extends BaseGetView<SignUpScreenController> {
                 padding: padding.symmetric(horizontal: 40),
                 child: CustomButton(
                   buttonText: LocalizationKeys.signUpTextKey.tr,
-                  onTap: () {},
+                  onTap: () {}
                 ),
               ),
               SizedBox(height: 30.h),

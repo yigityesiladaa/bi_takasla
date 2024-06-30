@@ -1,14 +1,16 @@
 import 'package:bitakasla/config/routes/app_pages.dart';
-import 'package:bitakasla/core/base/base_stateless_widget.dart';
+import 'package:bitakasla/config/theme/theme_extensions.dart';
+import 'package:bitakasla/core/base/base_get_view.dart';
 import 'package:bitakasla/core/constants/app_colors.dart';
 import 'package:bitakasla/core/localization/localization_keys.dart';
+import 'package:bitakasla/view/auth/sign_in/sign_in_screen_controller.dart';
 import 'package:bitakasla/widgets/custom_button.dart';
 import 'package:bitakasla/widgets/custom_text_field.dart';
 import 'package:bitakasla/core/utils/size_config.dart';
 import 'package:bitakasla/widgets/primary_app_bar.dart';
 import 'package:bitakasla/widgets/scale_factor_autosize_text.dart';
 
-class SignInScreen extends BaseStatelessWidget {
+class SignInScreen extends BaseGetView<SignInScreenController> {
   const SignInScreen({super.key});
 
   @override
@@ -16,7 +18,14 @@ class SignInScreen extends BaseStatelessWidget {
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
-        appBar: PrimaryAppBar(title: LocalizationKeys.signInTextKey.tr),
+        appBar: PrimaryAppBar(
+          title: LocalizationKeys.signInTextKey.tr,
+          bgColor: theme.scaffoldBackgroundColor,
+          iconThemeData: const IconThemeData(color: AppColors.grey1000Color),
+          titleStyle: theme.primaryTextTheme.titleMedium!.semibold.copyWith(
+            color: AppColors.grey1000Color
+          ),
+        ),
         body: _buildBody(),
       ),
     );
@@ -38,7 +47,7 @@ class SignInScreen extends BaseStatelessWidget {
                   padding: padding.symmetric(horizontal: 40),
                   child: CustomButton(
                     buttonText: LocalizationKeys.signInTextKey.tr,
-                    onTap: () {},
+                    onTap: () async => await controller.signIn(),
                   ),
                 ),
                 SizedBox(height: 60.h),
@@ -70,7 +79,6 @@ class SignInScreen extends BaseStatelessWidget {
           ScaleFactorAutoSizeText(
             text: LocalizationKeys.dontHaveAccountYetTextKey.tr,
             style: theme.primaryTextTheme.bodyMedium!,
-            textAlign: TextAlign.end,
           ),
           SizedBox(width: 40.w),
           GestureDetector(

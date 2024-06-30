@@ -31,6 +31,8 @@ class CustomTextField extends BaseStatelessWidget {
   final void Function(String)? onChanged;
   final IconData? suffixIcon;
   final void Function()? onTapSuffixIcon;
+  final int? contentVerticalPadding;
+  final int? contentHorizontalPadding;
   const CustomTextField({
     super.key,
     this.style,
@@ -38,6 +40,8 @@ class CustomTextField extends BaseStatelessWidget {
     this.keyboardType,
     this.suffixIcon,
     this.onTapSuffixIcon,
+    this.contentVerticalPadding,
+    this.contentHorizontalPadding,
     this.textEditingController,
     this.maxLength,
     this.inputFormatters,
@@ -68,7 +72,6 @@ class CustomTextField extends BaseStatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(height: Get.height * 0.01),
           TextFormField(
             style: style ?? theme.primaryTextTheme.bodyMedium!.medium,
             validator: validator ?? Validators.formFieldValidation,
@@ -76,7 +79,6 @@ class CustomTextField extends BaseStatelessWidget {
                 keyboardType ?? const TextInputType.numberWithOptions(decimal: true),
             controller: textEditingController,
             maxLength: maxLength,
-            
             onChanged: onChanged,
             cursorColor: AppColors.cardBlueColor,
             decoration: _inputDecoration(
@@ -114,7 +116,7 @@ class CustomTextField extends BaseStatelessWidget {
     String? hintText,
   }) {
     return InputDecoration(
-      contentPadding: padding.symmetric(horizontal: 40, vertical: 20),
+      contentPadding: padding.symmetric(horizontal: contentHorizontalPadding ?? 40, vertical: contentVerticalPadding ?? 20),
       suffixIcon: IconButton(onPressed: onTapSuffixIcon, icon: Icon(suffixIcon)),
       label: Text(label, style: style,),
       border: border ??

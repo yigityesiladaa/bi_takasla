@@ -15,4 +15,12 @@ class AppConstants {
     countryCode: 'TR',
   );
 
+  static const navbarItemNames = [
+    'home',
+    'explore',
+    '',
+    'trends',
+    'profile',
+  ];
+
 }

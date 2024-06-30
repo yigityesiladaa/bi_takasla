@@ -1,5 +1,5 @@
 import 'package:bitakasla/config/routes/app_pages.dart';
-import 'package:bitakasla/config/theme/light_theme.dart';
+import 'package:bitakasla/config/theme/themes.dart';
 import 'package:bitakasla/core/base/base_controller.dart';
 import 'package:bitakasla/core/getx_manager.dart';
 import 'package:bitakasla/core/localization/localization_service.dart';
@@ -23,6 +23,8 @@ class MyApp extends StatelessWidget {
         builder: (_) {
           return GetMaterialApp(
             theme: lightTheme,
+            darkTheme: darkTheme,
+            themeMode: ThemeMode.light,
             locale: Get.find<LocalizationService>().getLocale(),
             debugShowCheckedModeBanner: false,
             getPages: AppPages.routes,

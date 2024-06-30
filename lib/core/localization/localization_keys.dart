@@ -13,4 +13,6 @@ class LocalizationKeys {
   static const String mailTextKey = 'mailTextKey';
   static const String confirmPasswordTextKey = 'confirmPasswordTextKey';
   static const String nameSurnameTextKey = 'nameSurnameTextKey';
+  static const String searchTextKey = 'searchTextKey';
+  static const String bitakaslaTitleTextKey = 'bitakaslaTitleTextKey';
 }

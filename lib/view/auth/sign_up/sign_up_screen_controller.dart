@@ -6,4 +6,7 @@ class SignUpScreenController extends BaseGetxController {
 
   void changePasswordObscureValue() => isPasswordObscured.value = !isPasswordObscured.value;
   void changeConfirmPasswordObscureValue() => isConfirmPasswordObscured.value = !isConfirmPasswordObscured.value;
+
+  
+
 }

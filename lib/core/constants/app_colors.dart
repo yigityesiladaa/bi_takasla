@@ -5,7 +5,7 @@ class AppColors {
   static const Color primaryBackgroundColor = Color.fromARGB(255, 2, 15, 49);
   static const Color darkPrimaryColor = Color.fromARGB(255, 4, 22, 68);
   static const Color hintColor = Color.fromARGB(255, 146, 146, 146);
-  static const Color fillColor = Color.fromARGB(255, 230, 230, 230);
+  static const Color fillColor = Color.fromARGB(255, 226, 225, 225);
   static const Color swapCardColor = Colors.white;
   static const Color rateStarColor = Color.fromARGB(255, 255, 176, 6);
   static const Color textFieldFillColor = Color.fromARGB(255, 238, 241, 255);
@@ -36,7 +36,7 @@ class AppColors {
   static const Color punch = Color(0xFFEA3943);
   static const primaryBlue = Color(0xFF1E315F);
 
-  static const Color backgroundColor = Color(0xFFF3F3F3);
+  static const Color backgroundColor = Color.fromARGB(255, 230, 230, 232);
   static const Color cardColor = Color(0xFFFFFFFF);
   static const Color cardBlueColor = Color(0xFF1E315F);
   static const Color borderGray = Color(0xFFE7E7E7);
@@ -44,4 +44,22 @@ class AppColors {
   static const Color primaryWhite = Color(0xFFFBFCFF);
   static const Color primaryGrey = Color(0xffA89F9F);
   static const primaryRed = Color(0xFFE84257);
+
+  static const primaryRedColor = Color(0xFFE84257);
+  static const primaryGreenColor = Color(0xFF2EBD85);
+  static const primaryBlueColor = Color(0xFF4C86CD);
+  static const dividerColor = Color(0xFF181817);
+  static const blackColor = Color(0xFF000000);
+  static const whiteColor = Color(0xFFFFFFFF);
+  static const grey1100Color = Color(0xFF0F0F0F);
+  static const grey1000Color = Color(0xFF181817);
+  static const grey900Color = Color(0xFF2A2A2A);
+  static const grey800Color = Color(0xFF343434);
+  static const grey700Color = Color(0xFF494949);
+  static const grey600Color = Color(0xFF686868);
+  static const grey500Color = Color(0xFF7D7D7D);
+  static const grey400Color = Color(0xFF919191);
+  static const grey300Color = Color(0xFFA5A5A5);
+  static const grey200Color = Color(0xFFC3C3C3);
+  static const grey100Color = Color(0xFFE1E1E1);
 }

@@ -16,4 +16,6 @@ final Map<String, String> enUS = {
   LocalizationKeys.confirmPasswordTextKey: 'Confirm Password',
   LocalizationKeys.nameSurnameTextKey: 'Name Surname',
   LocalizationKeys.alreadyHaveAccountTextKey: 'Do you already have an account?',
+  LocalizationKeys.searchTextKey: 'Search',
+  LocalizationKeys.bitakaslaTitleTextKey: 'Bi\'Takasla',
 };
