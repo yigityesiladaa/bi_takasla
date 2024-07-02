@@ -28,4 +28,5 @@ final Map<String, String> enUS = {
   LocalizationKeys.walletTextKey: 'Wallet',
   LocalizationKeys.settingsTitleTextKey: 'Settings',
   LocalizationKeys.notificationsTitleTextKey: 'Notifications',
+  LocalizationKeys.addProductTitleTextKey: 'Add Product',
 };

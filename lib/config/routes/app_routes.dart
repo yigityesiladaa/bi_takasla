@@ -10,5 +10,6 @@ abstract class AppRoutes {
   static const trendsScreen = '/trendsScreen';
   static const profileScreen = '/profileScreen';
   static const notificationsScreen = '/notificationsScreen';
+  static const addProductScreen = '/addProductScreen';
 
 }

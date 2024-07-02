@@ -25,4 +25,5 @@ class LocalizationKeys {
   static const String signOutTextKey = 'signOutTextKey';
   static const String walletTextKey = 'walletTextKey';
   static const String notificationsTitleTextKey = 'notificationsTitleTextKey';
+  static const String addProductTitleTextKey = 'addProductTitleTextKey';
 }

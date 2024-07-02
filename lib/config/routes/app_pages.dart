@@ -1,3 +1,5 @@
+import 'package:bitakasla/view/add_product/add_product_screen.dart';
+import 'package:bitakasla/view/add_product/add_product_screen_binding.dart';
 import 'package:bitakasla/view/app_selection/app_selection_screen.dart';
 import 'package:bitakasla/view/app_selection/app_selection_screen_binding.dart';
 import 'package:bitakasla/view/auth/sign_in/sign_in_screen.dart';
@@ -37,6 +39,11 @@ class AppPages {
       name: AppRoutes.notificationsScreen,
       page: () => const NotificationsScreen(),
       binding: NotificationsScreenBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.addProductScreen,
+      page: () => const AddProductScreen(),
+      binding: AddProductScreenBinding(),
     ),
   ];
 }

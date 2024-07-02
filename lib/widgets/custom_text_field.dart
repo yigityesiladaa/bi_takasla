@@ -27,12 +27,13 @@ class CustomTextField extends BaseStatelessWidget {
   final TextStyle? hintStyle;
   final String? hintText;
   final EdgeInsetsGeometry? customPadding;
-  final String label;
+  final String? label;
   final void Function(String)? onChanged;
   final IconData? suffixIcon;
   final void Function()? onTapSuffixIcon;
   final int? contentVerticalPadding;
   final int? contentHorizontalPadding;
+  final int? maxLines;
   const CustomTextField({
     super.key,
     this.style,
@@ -46,6 +47,7 @@ class CustomTextField extends BaseStatelessWidget {
     this.maxLength,
     this.inputFormatters,
     this.border,
+    this.maxLines = 1,
     this.disabledBorder,
     this.errorBorder,
     this.enabledBorder,
@@ -62,7 +64,7 @@ class CustomTextField extends BaseStatelessWidget {
     this.isMoney = false,
     this.isRate = false,
     this.isPrefixIcon,
-    required this.label,
+    this.label,
   });
 
   @override
@@ -79,6 +81,7 @@ class CustomTextField extends BaseStatelessWidget {
                 keyboardType ?? const TextInputType.numberWithOptions(decimal: true),
             controller: textEditingController,
             maxLength: maxLength,
+            maxLines: maxLines,
             onChanged: onChanged,
             cursorColor: AppColors.cardBlueColor,
             decoration: _inputDecoration(
@@ -118,13 +121,13 @@ class CustomTextField extends BaseStatelessWidget {
     return InputDecoration(
       contentPadding: padding.symmetric(horizontal: contentHorizontalPadding ?? 40, vertical: contentVerticalPadding ?? 20),
       suffixIcon: IconButton(onPressed: onTapSuffixIcon, icon: Icon(suffixIcon)),
-      label: Text(label, style: style,),
+      label: label != null ? Text(label!, style: style,) : const SizedBox(),
       border: border ??
           OutlineInputBorder(
             borderRadius: BorderRadius.circular(sizeConfig.borderRadiusValue),
             borderSide: const BorderSide(
               color: AppColors.darkGray,
-              width: .5,
+              width: .2,
             ),
           ),
       disabledBorder: disabledBorder ??
@@ -132,7 +135,7 @@ class CustomTextField extends BaseStatelessWidget {
             borderRadius: BorderRadius.circular(sizeConfig.borderRadiusValue),
             borderSide: const BorderSide(
               color: AppColors.darkGray,
-              width: .5,
+              width: .2,
             ),
           ),
       errorBorder: errorBorder ??
@@ -140,7 +143,7 @@ class CustomTextField extends BaseStatelessWidget {
             borderRadius: BorderRadius.circular(sizeConfig.borderRadiusValue),
             borderSide: const BorderSide(
               color: AppColors.darkGray,
-              width: .5,
+              width: .2,
             ),
           ),
       enabledBorder: enabledBorder ??
@@ -148,7 +151,7 @@ class CustomTextField extends BaseStatelessWidget {
             borderRadius: BorderRadius.circular(sizeConfig.borderRadiusValue),
             borderSide: const BorderSide(
               color: AppColors.darkGray,
-              width: .5,
+              width: .2,
             ),
           ),
       focusedBorder: focusedBorder ??
@@ -156,7 +159,7 @@ class CustomTextField extends BaseStatelessWidget {
             borderRadius: BorderRadius.circular(sizeConfig.borderRadiusValue),
             borderSide: const BorderSide(
               color: AppColors.darkGray,
-              width: .5,
+              width: .2,
             ),
           ),
       focusedErrorBorder: focusedErrorBorder ??
@@ -164,7 +167,7 @@ class CustomTextField extends BaseStatelessWidget {
             borderRadius: BorderRadius.circular(sizeConfig.borderRadiusValue),
             borderSide: const BorderSide(
               color: AppColors.darkGray,
-              width: .5,
+              width: .2,
             ),
           ),
       /*

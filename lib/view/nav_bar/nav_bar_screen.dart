@@ -31,7 +31,7 @@ class NavBarScreen extends BaseGetView<NavBarController> {
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         floatingActionButton: FloatingActionButton(
           backgroundColor: AppColors.primaryColor,
-          onPressed: () {},
+          onPressed: () => Get.toNamed(AppRoutes.addProductScreen),
           child: SvgPicture.asset('assets/nav_bar_icons/add.svg'),
         ),
       ),

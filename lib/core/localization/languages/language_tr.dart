@@ -26,4 +26,5 @@ final Map<String, String> trTR = {
   LocalizationKeys.signOutTextKey: 'Çıkış Yap',
   LocalizationKeys.walletTextKey: 'Cüzdan',
   LocalizationKeys.notificationsTitleTextKey: 'Bildirimler',
+  LocalizationKeys.addProductTitleTextKey: 'Ürün Ekle',
 };

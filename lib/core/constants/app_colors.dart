@@ -5,7 +5,7 @@ class AppColors {
   static const Color primaryBackgroundColor = Color.fromARGB(255, 2, 15, 49);
   static const Color darkPrimaryColor = Color.fromARGB(255, 4, 22, 68);
   static const Color hintColor = Color.fromARGB(255, 146, 146, 146);
-  static const Color fillColor = Color.fromARGB(255, 226, 225, 225);
+  static const Color fillColor = Color.fromARGB(255, 237, 235, 235);
   static const Color swapCardColor = Colors.white;
   static const Color rateStarColor = Color.fromARGB(255, 255, 176, 6);
   static const Color textFieldFillColor = Color.fromARGB(255, 238, 241, 255);
