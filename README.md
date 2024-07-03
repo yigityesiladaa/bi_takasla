@@ -7,7 +7,7 @@ Current architectures along with current technologies and libraries are used in 
 
 <a href="https://flutter.dev/" rel="nofollow"><img alt="flutter" src="https://iconape.com/wp-content/png_logo_vector/flutter-logo.png" width="40" style="max-width: 100%;"></a>
 <a href="https://pub.dev/packages/get" rel="nofollow"><img alt="getx" src="https://api.intopros.com/uploads/2023-03/unauth-1679399215800-5304be64bb8949f0b18e71b5f94488c0.png" width="55" style="max-width: 100%;"></a>
-<a href="https://firebase.google.com/" rel="nofollow"><img alt="firebase" src="https://cdn.iconscout.com/icon/free/png-256/free-firebase-11796860-9632965.png" width="55" height="55" style="max-width: 40%;"></a>
+<a href="https://firebase.google.com/" rel="nofollow"><img alt="firebase" src="https://cdn.iconscout.com/icon/free/png-256/free-firebase-11796860-9632965.png" width="40" style="max-width: 40%;"></a>
 
 ### Features Used in the Application:
                     
